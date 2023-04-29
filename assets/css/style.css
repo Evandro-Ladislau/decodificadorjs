@@ -1,0 +1,364 @@
+body {
+    
+    background: #f3f5fc;
+}
+
+
+header {
+
+    background-image: url("../imagem/sky.png");
+    padding: 20px 0;
+}
+
+.caixa {
+
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+::placeholder {
+
+    color: #914;
+    font-size: 22px;
+    
+
+  }
+
+#card {
+    
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+
+.face {
+
+    width: 100px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+     position: absolute;
+     /*
+    border-radius: 10px; */
+
+}
+
+.face img {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#back {
+
+    background-color: #f3f5fc;
+}
+
+.flip {
+
+    transform: rotateY(360deg);
+}
+
+
+
+main {
+
+    
+    background: #f3f5fc;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.decrip-encript-text textarea {
+    
+    margin: 60px 100px;
+    background: #f3f5fc;
+}
+
+textarea {
+
+    width: 250px;
+    padding: 0;
+    margin-left: 2px;
+    margin-top: 0;
+    font-family: 'Inter';
+    font-size: 18px;
+    border: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+}
+
+
+.botoes-acao {
+
+   
+    margin-top: 265px;
+    margin-left: 100px;
+}
+
+.button-encript-1 {
+
+    background: #0a3871;
+    color: #ffffff;
+}
+
+.button-encript-1:hover {
+
+    background-color: #f3f5fc; 
+    color: #0a3871; 
+    border: 3px solid lightgreen; 
+}
+
+.button-encript-2 {
+    
+    color:  #0a3871;
+}
+
+.button-encript-2:hover {
+    
+    background-color: #0a3871; 
+    color: #ffffff;
+    border: 3px solid lightgreen; 
+}
+
+.botoes-acao p {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+button {
+
+    margin: 0 10px;
+    height: 50px;
+    width: 240px;
+    border: 2px solid #0a3871;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+
+
+
+.resultado {
+
+    position: absolute;
+    background: #ffffff;
+    right: 25px;
+    top: 40px;
+    width: 300px;
+    height: 640px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    
+
+
+    
+}
+
+.resultado textarea {
+
+    margin-top: 80px;
+}
+
+.caixa-resultado {
+
+    margin-top: 100px;
+}
+
+.img-texto{
+
+    width: 100%;
+    margin-top: 0;
+}
+
+.resultado p.titulo-resultado {
+
+    font-family: 'Inter';
+    color: #914;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.resultado p.texto-resultado {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
+    text-align: center;
+
+
+}
+
+.button-copiar {
+
+    margin: 100px auto;
+    margin-bottom: 0px;
+    background: #ffffff;
+}
+
+.button-copiar:hover {
+
+    background-color: #0a3871; 
+    color: #ffffff;
+    border: 3px solid lightgreen; 
+}
+
+footer {
+
+    margin-top: 50px;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+
+@media screen and (max-width: 540px) {
+
+    header, .caixa, main, .botoes-acao, .resultado  {
+
+        width: auto;
+    }
+
+    .decrip-encript-text textarea {
+
+        margin: 60px auto;
+    }
+    
+    .botoes-acao {
+        
+        margin: 265px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .botoes-acao p {
+
+        margin: 0;
+    }
+
+
+
+    
+    .button-encript-1, .button-encript-2 {
+ 
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px 20px;
+            
+    }
+    
+
+
+    .button-encript-2 {
+
+        margin-top: 15px;
+    }
+   
+    .resultado {
+        
+        position: relative;
+        width: 250px ;
+        height: 600;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        
+    }
+
+    .button-copiar {
+
+        margin: 50px auto 0;
+    }
+
+    .caixa-resultado {
+
+        margin: 150px auto;
+    }
+
+    
+    
+    
+  
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+
+    .caixa, main  {
+
+        width: auto;
+    }
+    
+ 
+    .botoes-acao {
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 340px;
+        margin-left: 0;
+    }
+    
+
+    .button-encript-1, .button-encript-2 {
+ 
+        width: 320px;
+        margin: 10px;
+        padding: 10px 20px;
+            
+    }
+
+    .img-texto{
+
+        width: 350px;
+        margin-top: 0;
+    }
+ 
+
+    .resultado {
+        
+        position: relative;
+        width: 670px;
+        margin: 10px;
+        padding: 10px 20px;
+        right: 0;
+        margin: 0 auto;
+
+    }
+
+    .caixa-resultado {
+
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Decodificador de Texto</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1 class="img-logo"><img src="assets/imagem/logo.png" alt="logo"></h1>
+        </div>
+    </header>
+    <main>
+        <div class="decrip-encript-text">
+            <textarea id="texto-encript-decript" name="" id="" cols="36" rows="2"
+                placeholder="Digite seu texto"></textarea>
+        </div>
+        <div class="flip" id="card">
+            <div class="face" id="back">
+                <img src="./assets/imagem/cubo.png" alt="">
+            </div>
+
+        </div>
+        <div class="botoes-acao">
+            <p class="paragraph"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e
+                sem acento.</p>
+                <button id="button-encript" type="button" onclick="criptografar()" class="button-encript-1">Encriptografar</button>
+                <button id="button-decript" onclick="decriptografar()" class="button-encript-2">Decriptografar</button>
+        </div>
+        <section class="resultado">
+            <div class="caixa-resultado">
+                <textarea class="resultado-textarea" id="texto-encript-result" name="" id="" cols="30"
+                    rows="10"></textarea>
+                <img class="img-texto" id="img-texto" src="./assets/imagem/loho.png" alt="">
+                <div id="texto-inicial">
+                    <p class="titulo-resultado">Nenhuma mensagem encontrada</p>
+                    <p class="texto-resultado">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <button onclick="copiatTexto()" class="button-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-icon">
+            <a href="https://www.linkedin.com/in/evandro-ladislau/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Evandro-Ladislau"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/9af0e6165b.js" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
