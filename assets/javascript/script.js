@@ -49,9 +49,6 @@ function criptografar() {
 
         alert("Digite um texto para criptografá-lo!")
     }
-
-    hj('event', 'clicou_no_decodificar');
-
 }
 
 function decriptografar() {
@@ -82,6 +79,8 @@ function decriptografar() {
 
         alert("Digite um texto para criptografá-lo!")
     }
+
+    eventClick();
 }
 
 function mostrarImagem() {
@@ -129,3 +128,8 @@ buttonDecript.addEventListener("click", (e) => {
     card.classList.toggle("flip");
 });
 
+function eventClick(){
+
+    hj('event', 'clicou_no_decodificar');
+    console.log("Chamou a função!");
+}
