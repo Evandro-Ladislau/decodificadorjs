@@ -131,5 +131,4 @@ buttonDecript.addEventListener("click", (e) => {
 function eventClick(){
 
     hj('event', 'clicou_no_decodificar');
-    console.log("Chamou a função!");
 }
