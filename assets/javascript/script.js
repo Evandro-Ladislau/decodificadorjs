@@ -50,6 +50,8 @@ function criptografar() {
         alert("Digite um texto para criptografá-lo!")
     }
 
+    hj('event', 'clicou_no_decodificar');
+
 }
 
 function decriptografar() {
